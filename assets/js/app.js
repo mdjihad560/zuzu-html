@@ -5,22 +5,17 @@
 
   /*------------------------------------------------------------------
   [Table of contents]
-  zuzu STICKY MENU JS INIT
-  zuzu COUNTER JS INIT
-  zuzu TEXT SLIDER
-  zuzu TEXT SLIDER 2
-  zuzu CLIENT SLIDER
-  zuzu CLIENT SLIDER 2
-  zuzu TESTIMONIAL SLIDER
-  zuzu TESTIMONIAL SLIDER 2
-  zuzu PRICING TABLE JS INIT
-  zuzu SCROLL EFFECT TWO JS INIT 01
-  zuzu SCROLL EFFECT TWO JS INIT 02
-  zuzu MAGNIFIC POPUP JS INIT
-  zuzu GALLERY MASONAY FILTER JS 01
-  zuzu GALLERY MASONAY FILTER JS 02
-  zuzu GALLERY MASONAY FILTER JS 03
-  zuzu MAP JS
+    ZUZU PRELOADER JS INIT
+  ZUZU SCROLL TOP JS INIT
+  ZUZU STICKY MENU JS INIT
+  ZUZU COUNTER JS INIT
+  ZUZU CLIENT SLIDER INIT
+  ZUZU TESTIMONIAL SLIDER INIT
+  ZUZU MAGNIFIC POPUP JS INIT
+  ZUZU CARD SLIDER INIT
+  ZUZU TEXT SLIDER INIT
+  ZUZU CARD SLIDER 02 INIT
+  ZUZU MAP JS INIT
   
   -------------------------------------------------------------------*/
 
@@ -33,13 +28,13 @@
   };
   $(function () {
     /*--------------------------------------------------------------
-    zuzu PRELOADER JS INIT
+    ZUZU PRELOADER JS INIT
     --------------------------------------------------------------*/
 
     $(".zuzu-preloader").fadeOut(500);
 
     /*--------------------------------------------------------------
-    zuzu SCROLL TOP JS INIT
+    ZUZU SCROLL TOP JS INIT
     --------------------------------------------------------------*/
     //Scroll event
     $(window).scroll(function () {
@@ -56,7 +51,7 @@
     });
 
     /*--------------------------------------------------------------
-    zuzu STICKY MENU JS INIT
+    ZUZU STICKY MENU JS INIT
     --------------------------------------------------------------*/
     $(window).on('scroll', function () {
       if ($(window).scrollTop() > 50) {
@@ -67,7 +62,7 @@
     });
 
     /*--------------------------------------------------------------
-    zuzu COUNTER JS INIT
+    ZUZU COUNTER JS INIT
     --------------------------------------------------------------*/
     var zuzu_counter = $('#zuzu-counter');
     if (zuzu_counter.is_exist()) {
@@ -99,7 +94,7 @@
     }
 
     /*--------------------------------------------------------------
-    zuzu CLIENT SLIDER
+    ZUZU CLIENT SLIDER INIT
     --------------------------------------------------------------*/
     var zuzu_client_slider = $('.zuzu-client-slider');
     if (zuzu_client_slider.is_exist()) {
@@ -135,7 +130,7 @@
     }
 
     /*--------------------------------------------------------------
-    zuzu TESTIMONIAL SLIDER
+    ZUZU TESTIMONIAL SLIDER INIT
     --------------------------------------------------------------*/
     var zuzu_testimonial_slider = $('.zuzu-testimonial-slider');
     if (zuzu_testimonial_slider.is_exist()) {
@@ -167,7 +162,7 @@
             centerPadding: '70px'
           }
         }, {
-          breakpoint: 767,
+          breakpoint: 850,
           settings: {
             slidesToShow: 1,
             centerPadding: '70px'
@@ -183,7 +178,7 @@
     }
 
     /*--------------------------------------------------------------
-    zuzu MAGNIFIC POPUP JS INIT
+    ZUZU MAGNIFIC POPUP JS INIT
     ------------------------------------------------------------*/
     var popup_youtube = $('.zuzu-popup');
     if (popup_youtube.is_exist()) {
@@ -194,7 +189,7 @@
     }
 
     /*--------------------------------------------------------------
-    NEXTO SLIDER TWO
+    ZUZU CARD SLIDER INIT
     --------------------------------------------------------------*/
     var zuzu_card_slider = $('.zuzu-card-slider');
     if (zuzu_card_slider.is_exist()) {
@@ -235,7 +230,7 @@
     }
 
     /*--------------------------------------------------------------
-    NEXTO TEXT SLIDER
+    ZUZU TEXT SLIDER INIT
     --------------------------------------------------------------*/
     var zuzu_text_slider = $('.zuzu-text-slider');
     if (zuzu_text_slider.is_exist()) {
@@ -262,7 +257,7 @@
     }
 
     /*--------------------------------------------------------------
-    FUGU CARD SLIDER V4
+    ZUZU CARD SLIDER 02 INIT
     --------------------------------------------------------------*/
     var zuzu_card_slider2 = $('.zuzu-card-slider2');
     if (zuzu_card_slider2.is_exist()) {
@@ -284,7 +279,7 @@
   $(window).on("load", function () {}); // End window LODE
 
   /*--------------------------------------------------------------
-  zuzu MAP JS
+  ZUZU MAP JS INIT
   ------------------------------------------------------------*/
   var google_map = $('#map');
   if (google_map.is_exist()) {

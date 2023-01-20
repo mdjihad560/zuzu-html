@@ -463,6 +463,13 @@
   color: #724FE5;
 }
 
+.header-pink .site-menu-main .sub-menu--item:hover > a {
+  color: #FF3C82;
+}
+.header-deep-pink .site-menu-main .sub-menu--item:hover > a {
+  color: #FF00D5;
+}
+
 @media (min-width: 992px) {
   .site-menu-main .sub-menu.megamenu {
     background-color: #fff;
