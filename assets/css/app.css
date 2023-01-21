@@ -3579,7 +3579,6 @@ a.zuzu-card-btn {
   overflow: hidden;
   position: relative;
   padding: 170px 0 130px;
-  background-color: var(--warning-400);
 }
 @media (max-width: 991px) {
   .zuzu-hero-section {
