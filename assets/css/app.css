@@ -3824,8 +3824,8 @@ a.zuzu-card-btn {
 .zuzu-hero-box {
   position: absolute;
   transform-style: preserve-3d;
-  -webkit-animation: rotate 8s linear infinite;
-  animation: rotate 8s linear infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 @media (max-width: 991px) {
   .zuzu-hero-box {
@@ -3866,7 +3866,13 @@ a.zuzu-card-btn {
   }
 }
 
-@-webkit-keyframes rotate {
+@keyframes hero_animation {
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+@keyframes rotate {}
+@-webkit-keyframes hero_animation {
   0% {
     transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0deg) translateX(0) translateY(0px) translateZ(0px) skew(0deg, 0deg);
   }
