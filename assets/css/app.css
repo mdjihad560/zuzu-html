@@ -4107,8 +4107,10 @@ a.zuzu-card-btn {
 }
 .zuzu-hero-thumb5 .zuzu-hero-shape {
   position: absolute;
-  -webkit-animation: rotate 8s linear infinite;
-  animation: rotate 8s linear infinite;
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
 }
 .zuzu-hero-thumb5 .zuzu-hero-shape.shape-one {
   top: 39%;
@@ -4128,6 +4130,17 @@ a.zuzu-card-btn {
   }
 }
 
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .zuzu-counter-section {
   padding: 80px 0 0;
 }
